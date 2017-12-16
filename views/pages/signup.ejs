@@ -1,0 +1,22 @@
+<div class="space_01">
+<div class="container">
+    <div class="col-md-4"> 
+    <form action="/user/create" method="post" id="sign-up-form" class="form-signin">
+        
+        
+        <input type="text" class="form-control" placeholder="your name" name="name"/>
+        <input type="text" class="form-control" placeholder="your Title" name="title"/>
+        <input type="text" class="form-control" placeholder="email address" name="email"/>
+        <input type="password" class="form-control" placeholder="password" name="password" id="password"/>
+        <input type="password" class="form-control" placeholder="password confirmation" name="confirmation"/>
+        <br>
+        <label class="checkbox">
+                <input type="checkbox" name="admin" value= 'true'> Admin
+        </label>
+        <input type="submit" class="btn btn-success btn-lg btn-block" value="Create Account"/>
+        <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+        
+    </form>
+    </div>
+    </div>
+</div>

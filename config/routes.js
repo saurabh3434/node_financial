@@ -34,8 +34,25 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
-
+  },
+  'get /about': {
+    view: 'pages/about',
+    locals: {
+      layout: 'layout-about.ejs'
+    }
+  },
+  'get /login': {
+    view: 'pages/login',
+    locals: {
+      layout: 'layout.ejs'
+    }
+  },
+  'get /signup': {
+    view: 'pages/signup',
+    locals: {
+      layout: 'layout.ejs'
+    }
+  },
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
